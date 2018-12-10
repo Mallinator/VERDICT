@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/grad_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relay3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_verdict" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im1"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLogin"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/phnno"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/et_bg"
+                        android:drawableLeft="@drawable/india"
+                        android:hint="        Enter Number"
+                        android:inputType="number"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/blogin"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lin1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Request OTP"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/prog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blogin"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Beta 1.1"
+            android:id="@+id/admin"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

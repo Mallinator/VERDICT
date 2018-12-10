@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VerdicT</string>
+    <string name="title_activity_completed">Completed</string>
+    <string name="title_activity_my_poll">my_poll</string>
+</resources>

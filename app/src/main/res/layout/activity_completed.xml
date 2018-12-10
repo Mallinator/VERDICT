@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Completed"
+    android:background="@drawable/grad_bg">
+    <include
+        layout="@layout/toolbar_completed"
+        android:id="@+id/tool123"
+        >
+
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@id/tool123"
+        android:id="@+id/t1"
+        android:shadowColor="@color/black"
+        android:text="--"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycle_completed"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

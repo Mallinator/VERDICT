@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:gravity="center"
+    tools:context=".Aboutus">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/c1"
+                    android:src="@drawable/utkarsh" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="UTKARSH PALIWAL"
+                    android:layout_margin="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lovely Professional University"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:id="@+id/clg1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Pursuing B.tech|Android Developer| Machine Learning Enthusiast"
+                        android:id="@+id/des1"
+                        android:textStyle="bold"
+                        android:layout_margin="4dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/utkarsh_profile"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/linkedin"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/utkarsh_profile_g"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/github"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/c2"
+                android:layout_gravity="center"
+                android:src="@drawable/rahul"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name2"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/black"
+                    android:text="RAHUL SINGH TANWAR"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_margin="4dp"
+                    android:text="Lovely Professional University"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:id="@+id/clg2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:text="Pursuing B.tech|Android Developer"
+                    android:id="@+id/des2"/>
+                android:layout_margin="4dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rahul_profile"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/linkedin"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rahul_profile_g"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/github"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:id="@+id/c3"
+            android:src="@drawable/deepak"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name3"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="DEEPAK VISHWAKARMA"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lovely Professional University"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:id="@+id/clg3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="Pursuing B.tech|Android Developer|Web Developer| Blockchain Enthusiast"
+                android:id="@+id/des3"/>
+            android:layout_margin="4dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/karma_profile"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/linkedin"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/karma_profile_g"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/github"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>

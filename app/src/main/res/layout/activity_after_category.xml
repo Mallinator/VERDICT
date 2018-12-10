@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".After_category">
+
+    <include
+        layout="@layout/toolbar_after_category"
+        android:id="@+id/tool"
+        >
+
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@id/tool"
+        android:id="@+id/t1"
+        android:shadowColor="@color/black"
+        android:text="--"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/t1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle_after"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        android:layout_marginTop="15dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

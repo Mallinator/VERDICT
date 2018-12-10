@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".homeScreen"
+    android:background="@drawable/grad_bg"
+    android:id="@+id/r1">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/tool"
+            >
+
+        </include>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@id/tool"
+        android:id="@+id/t1"
+        android:shadowColor="@color/black"
+        android:text="--"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/t1"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:id="@+id/txtIntro"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        android:shadowColor="@color/black"
+        android:text=""/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/scroll"
+        android:layout_below="@id/txtIntro">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rel">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="10dp"
+                android:id="@+id/l1">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trendingimage"
+                    android:src="@drawable/trend"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="Trending"
+                    android:textSize="20dp"
+                    android:id="@+id/trendingtext"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l1"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/grad_bg"
+                android:id="@+id/recycle">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycle"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/latestimag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/latest" />
+
+                <TextView
+                    android:id="@+id/latesttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="Latest"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l2"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/grad_bg"
+                android:id="@+id/recycle1">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycle1"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/techimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/technology" />
+
+                <TextView
+                    android:id="@+id/techtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l3"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/grad_bg"
+                android:id="@+id/recycle2">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/l4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycle2"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/politicsimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/politics" />
+
+                <TextView
+                    android:id="@+id/politicstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l4"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/grad_bg"
+                android:id="@+id/recycle3">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/l5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycle3"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/newsimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/news" />
+
+                <TextView
+                    android:id="@+id/newstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l5"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/grad_bg"
+                android:id="@+id/recycle4">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/l6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycle4"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/lifeimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lifestyle" />
+
+                <TextView
+                    android:id="@+id/lifetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l6"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/grad_bg"
+                android:id="@+id/recycle5">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4dp"
+        app:menu_animationDelayPerItem="50"
+        app:menu_colorPressed="#E75043"
+        app:menu_colorRipple="#99FFFFFF"
+        app:menu_fab_size="normal"
+        app:menu_labels_position="left"
+        app:menu_shadowColor="#66000000"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_buttonSpacing="0dp"
+        app:menu_labels_ellipsize="none"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@color/transparent"
+        app:menu_shadowYOffset="3dp"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            android:background="@color/white"
+            android:src="@drawable/create"
+            app:fab_label="CREATE POLL"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_size="normal" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            android:background="@color/white"
+            android:src="@drawable/completed"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label="VOTE"
+            app:fab_size="normal" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            android:background="@color/white"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            android:src="@drawable/votes"
+            app:fab_label="COMPLETED POLLS"
+            app:fab_size="normal" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/mypoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            android:background="@color/white"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            android:src="@drawable/mypolls"
+            app:fab_label="MY POLLS"
+            app:fab_size="normal" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

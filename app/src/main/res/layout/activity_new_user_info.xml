@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewUserInfo"
+    android:background="@drawable/grad_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="VERDICT"
+        android:textAllCaps="true"
+        android:id="@+id/t1"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/t1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Tell us a little about yourself ...."
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/t2"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/ageEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/t2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/et_bg"
+            android:hint="Present Age"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lin"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ageEdt"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_2"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="   MALE   "
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_2"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="FEMALE"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/userEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/lin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/et_bg"
+            android:hint="Enter Desired Username"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_3"
+            android:text="Save"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:layout_marginTop="50dp"
+            android:textSize="18sp"
+            android:id="@+id/savebtn"
+            tools:ignore="HardcodedText"
+            android:layout_below="@+id/userEdt"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

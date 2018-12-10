@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".approveQues"
+    android:background="@drawable/grad_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/questiontxt"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/questiontxt">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:id="@+id/top1"/>
+
+        <TextView
+            android:layout_below="@id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:id="@+id/top2"/>
+
+        <TextView
+            android:layout_below="@+id/top2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:id="@+id/top3"/>
+
+        <TextView
+            android:layout_below="@id/top3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:id="@+id/top4"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/button_4"
+            android:textAllCaps="false"
+            android:text="Approve"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:id="@+id/bapp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_3"
+            android:text="Disapprove"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:id="@+id/bdapp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
